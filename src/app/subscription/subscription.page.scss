@@ -1,0 +1,89 @@
+ion-header{
+  ion-toolbar{
+    --background: #475a68;
+    --min-height: 62px;
+
+    ion-button{
+      --padding-start: 10px;
+      --padding-end: 10px;
+      --color: white;
+
+      ion-icon{
+        color: white;
+      }
+    }
+  }
+}
+
+ion-content{
+  --background: #fff url('../../assets/imgs/mesaurement-bg.jpg') no-repeat center center / cover;
+  --padding-top: 10vh;
+  --padding-start: 20px;
+  --padding-end: 20px;
+
+  .top-content{
+    height: 16vh;
+    margin-bottom: 2vh;
+  }
+
+  .middle-content{
+    height: 16vh;
+    margin-bottom: 2vh;
+  }
+
+  .description{
+    color: white;
+
+    h6{
+      margin-top: 0;
+      font-size: 14px;
+    }
+  }
+
+  ion-button{
+    --border-radius: 5px;
+    --padding-start: 0;
+    --padding-end: 0;
+    --background: rgba(0, 0, 0, 0);
+
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    height: auto;
+
+    &.alternative{
+      margin-top: 80px;
+    }
+
+    ion-item{
+      --border-radius: 5px;
+      --padding-start: 10px;
+      --padding-end: 0;
+
+      &.yearly{
+        --background: rgba(255, 80, 48, 1);
+      }
+
+      &.monthly{
+        --background: rgba(221, 36, 118, 1);
+      }
+
+      width: 100%;
+
+      ion-label{
+        margin: 20px 0;
+        color: white;
+      }
+
+      ion-icon{
+        color: white;
+      }
+    }
+  }
+
+  .trial-description{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+}

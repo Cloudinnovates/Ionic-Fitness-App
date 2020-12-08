@@ -1,0 +1,108 @@
+ion-header{
+  ion-toolbar{
+    --background: #475a68;
+
+    img {
+      height: 42px;
+      margin: 7px;
+    }
+
+    ion-button{
+      --padding-start: 5px;
+      --padding-end: 5px;
+
+      width: 35px;
+      height: 35px;
+
+      ion-icon{
+        color: white;
+      }
+    }
+
+    ion-menu-button{
+      color: white;
+    }
+  }
+}
+
+ion-content{
+  --background: #080e17 url(../../assets/imgs/recipe-bg.jpg) center bottom no-repeat;
+
+  .main-content{
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    .home-banner{
+      h1{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0;
+        color: white;
+        font-weight: bold;
+      }
+      p{
+        font-size: 14px;
+        line-height: 18px;
+        color: white;
+        
+        strong{
+          color: #ff7400;
+        }
+      }
+    }
+  }
+
+  .list{
+    .list-item{
+      background: linear-gradient(135deg, rgba(255, 80, 48, 1) 0, rgba(221, 36, 118, 1) 51%, rgba(221, 36, 118, 1) 100%);
+      color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+
+      p{
+        color: white;
+        margin: 0;
+      }
+      .name{
+        font-size: 16px;
+      }
+      .cooking{
+        line-height: 14px;
+        margin-bottom: 24px;
+      }
+      .size{
+        line-height: 14px;
+      }
+      .size-description{
+        line-height: 14px;
+      }
+      .calories-wrapper{
+        margin-top: 8px;
+        background-color: white;
+        padding: 5px;
+
+        .calories{
+          color: #ff7400;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .calories-description{
+          color: #222222;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+ion-footer{
+  ion-toolbar{
+    --background: #475a68;
+    --min-height: 30px;
+
+    text-align: center;
+    color: white;
+    font-size: 10px;
+  }
+}

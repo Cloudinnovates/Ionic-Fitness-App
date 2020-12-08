@@ -1,0 +1,7 @@
+<ion-content fullscreen>
+  <ion-img src="../assets/imgs/logo-new.png" ></ion-img>
+  <ion-input inputmode="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+  <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  <ion-button (click)="loginWithEmail()">Sign In</ion-button>
+  <ion-button fill="outline" color="success" routerLink="/signup">New? Create an account</ion-button>
+</ion-content>

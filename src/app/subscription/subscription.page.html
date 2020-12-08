@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="chevron-back-outline"></ion-icon>Back
+      </ion-button>
+    </ion-buttons>
+    <!-- <ion-title>QuickFitGuru</ion-title> -->
+    <ion-buttons slot="end">
+      <ion-button (click)="restore()">
+        Restore
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="top-content">
+    <ion-img src="../assets/imgs/logo-new.png" ></ion-img>
+  </div>
+  <div class="middle-content">
+    <div class="description">
+      <h2>Hello,</h2>
+      <h6>Get access to the world's largest fitness community, daily workouts, meal plans and more!</h6>
+    </div>
+  </div>
+  <div class="bottom-content">
+    <ion-button expand="full" (click)="checkout(0)">
+      <ion-item lines="none" class="yearly">
+        <ion-label>
+          <h2><strong>Yearly ⋅</strong> 8.33USD / month</h2>
+          <h4>99.96USD / year billed annually</h4>
+        </ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-button>
+    <ion-button expand="full" (click)="checkout(1)">
+      <ion-item lines="none" class="monthly">
+        <ion-label>
+          <h2><strong>3 Day FREE Trial ⋅</strong> 12.99USD / month</h2>
+          <h4>Billed monthly after FREE 3-day trial</h4>
+        </ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-button>
+    <p class="trial-description">This Free trial is not valid if you have previously redeemed a trial offer</p>
+    <!-- <ion-button (click)="checkout()">{{price}}/{{billingPeriodStr}}(7 Days Free Trial)</ion-button> -->
+    <!-- <ion-button (click)="goBack()" class="alternative">Back</ion-button> -->
+  </div>
+</ion-content>

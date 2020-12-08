@@ -1,0 +1,115 @@
+ion-header{
+    ion-toolbar{
+      --background: #475a68;
+  
+      img {
+        height: 42px;
+        margin: 7px;
+      }
+  
+      ion-button{
+        --padding-start: 5px;
+        --padding-end: 5px;
+  
+        width: 35px;
+        height: 35px;
+  
+        ion-icon{
+          color: white;
+        }
+      }
+  
+      ion-menu-button{
+        color: white;
+      }
+    }
+  }
+  
+  ion-content{
+    --background: #fff url('../../assets/imgs/account-page-bg.jpg') no-repeat center center / cover;
+  
+    .main-content{
+      padding-top: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
+    
+      .home-banner{
+        h1{
+          text-align: center;
+          font-size: 18px;
+          margin: 10px 0;
+          color: white;
+          font-weight: bold;
+        }
+      }
+  
+      .landing-link{
+        .information{
+            ion-item{
+                --background: transparent!important;
+                ion-icon{
+                    color: #ff7400;
+                    font-size: 24px;
+                }
+                p{
+                    text-align: left;
+                    font-size: 12px;
+                    margin: 0px 10px;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+        ion-item{
+            margin-top: 10px;
+            --background: url('../../assets/imgs/input-outline.png') no-repeat 0 0 / 100% 100%;
+            --border-style: none !important;
+            ion-label{
+                text-align: left;
+                font-size: 15px;
+                margin: 0px 10px;
+                color: white;
+                font-weight: bold;
+            }
+            ion-input{
+                color: white;
+            }
+        }
+
+        .title{
+          --background:none;
+          --padding-start: 0px;
+          --padding-bottom: 0px;
+          
+          ion-label{
+              --padding-start: 0px;
+              text-align: left;
+              font-size: 15px;
+              color: white;
+              font-weight: bold;
+              margin-bottom: 0px;
+          }
+      }
+
+        ion-textarea{
+            color: white;
+        }
+        ion-button{
+            margin-top: 20px;
+            --background: #ff7400;
+        }
+      }
+    }
+  }
+  
+  ion-footer{
+    ion-toolbar{
+      --background: #475a68;
+      --min-height: 30px;
+  
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+  }
+  

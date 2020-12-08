@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "620265575912",
+    "firebase_url": "https://fitguru-283304.firebaseio.com",
+    "project_id": "fitguru-283304",
+    "storage_bucket": "fitguru-283304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620265575912:android:77437452e140263e74805d",
+        "android_client_info": {
+          "package_name": "com.fitguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620265575912-93ktdkcuqt2mafr0jgk8q7o50n64l493.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaXFy28TVCgzFkticdoZat6uPkW5cHrSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620265575912-93ktdkcuqt2mafr0jgk8q7o50n64l493.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

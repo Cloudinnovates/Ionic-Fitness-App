@@ -1,0 +1,27 @@
+ion-content{
+  --background: #fff url('../../assets/imgs/subscribe-bg.jpg') no-repeat center center / cover;
+  --padding-top: 100px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+
+  ion-img{
+    margin-bottom: 30px;
+  }
+
+  ion-input{
+    --background: white;
+    --padding-start: 10px;
+
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  ion-button{
+    --border-radius: 5px;
+
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    height: 38px;
+  }
+}

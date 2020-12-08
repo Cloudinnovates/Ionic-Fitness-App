@@ -1,0 +1,160 @@
+ion-header{
+  ion-toolbar{
+    --background: #475a68;
+
+    img {
+      height: 42px;
+      margin: 7px;
+    }
+
+    ion-button{
+      --padding-start: 5px;
+      --padding-end: 5px;
+
+      width: 35px;
+      height: 35px;
+
+      ion-icon{
+        color: white;
+      }
+    }
+
+    ion-menu-button{
+      color: white;
+    }
+  }
+}
+
+ion-content{
+  --background: #080e17 url(../../assets/imgs/recipe-bg.jpg) center bottom no-repeat;
+
+  .main-content{
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  
+    .home-banner{
+      text-align: center;
+      color: white;
+
+      h1{
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h3{
+        margin-top: 0;
+        margin-bottom: 18px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .schedule{
+    h4{
+      text-align: center;
+      color: white;
+    }
+
+    .list{
+      .list-item{
+        background: linear-gradient(135deg, rgba(255, 80, 48, 1) 0, rgba(221, 36, 118, 1) 51%, rgba(221, 36, 118, 1) 100%);
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        ion-label{
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        ion-icon {
+          width: 18px;
+          height: 18px;
+        }
+
+        ion-icon.collapsed{
+          transform: rotatez(0deg);
+        }
+
+        ion-icon.expanded{
+          transform: rotatez(90deg);
+        }
+      }
+
+      .expandable-table{
+        overflow: hidden;
+
+        table{
+          thead{
+            background-color: white;
+            font-size: 14px;
+
+            th{
+              padding: 5px;
+            }
+          }
+
+          tbody{
+            background-color: black;
+            color: white;
+            td{
+              padding: 5px;
+            }
+            .sets{
+              text-align: center;
+            }
+            .reps{
+              text-align: center;
+            }
+            tr{
+              opacity: 1;
+              &.disabled{
+                opacity: 0.4;
+                pointer-events: none;
+              }
+            }
+          }
+        }
+      }
+
+      .expandable-table.collapsed{
+        max-height: 10000px;
+        animation-name: maxHeightDecreasing;
+        animation-duration: 0s;
+        animation-fill-mode: forwards;
+      }
+
+      .expandable-table.expanded{
+        max-height: 0px;
+        animation-name: maxHeightIncreasing;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+ion-footer{
+  ion-toolbar{
+    --background: #475a68;
+    --min-height: 30px;
+
+    text-align: center;
+    color: white;
+    font-size: 10px;
+  }
+}
+
+@keyframes maxHeightIncreasing {
+  from {max-height: 0px;}
+  to {max-height: 10000px;}
+}
+
+@keyframes maxHeightDecreasing {
+  from {max-height: 10000px;}
+  to {max-height: 0px;}
+}

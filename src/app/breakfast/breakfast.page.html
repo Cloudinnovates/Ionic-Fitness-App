@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="../assets/imgs/logo-new.png" />
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button href="/home">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="restaurant"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="pie-chart"></ion-icon>
+      </ion-button>
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="home-banner">
+      <h1>BREAKFAST</h1>
+    </div>
+
+    <div class="list">
+      <div class="list-item" *ngFor="let item of items">
+        <ion-label>
+          <h2 *ngFor="let content of item.contents">{{content}}</h2>
+          <h4>Protein - {{item.protein}} &nbsp;&nbsp; Calories - {{item.calories}}</h4>
+        </ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <span>2018 ALL RIGHTS RESERVED</span>
+  </ion-toolbar>
+</ion-footer>

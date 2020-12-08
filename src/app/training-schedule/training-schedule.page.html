@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="../assets/imgs/logo-new.png" />
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button href="/home">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="restaurant"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="pie-chart"></ion-icon>
+      </ion-button>
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="home-banner">
+      <h1>{{title}}</h1>
+      <h3>{{description}}</h3>
+    </div>
+
+    <div class="schedule" *ngFor="let scheduleItem of schedule">
+      <h4>WEEK{{scheduleItem.week}}</h4>
+      <div class="list">
+        <div class="list-item-expandable" *ngFor="let training of scheduleItem.trainings; let i = index">
+          <div class="list-item" (click)="handleItemClick(scheduleItem.week, i + 1)">
+            <ion-label>
+              DAY{{i + 1}} EXERCISE
+            </ion-label>
+            <ion-icon name="chevron-forward-outline" [class]="selectedWeek == scheduleItem.week && selectedDay == i + 1 ? 'expanded' : 'collapsed'"></ion-icon>
+          </div>
+          <div class="expandable-table" [class]="selectedWeek == scheduleItem.week && selectedDay == i + 1 ? 'expanded' : 'collapsed'">
+            <table width="100%" border="1px" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th width="45%">Exercise</th>
+                  <th width="10%">Sets</th>
+                  <th width="10%">Reps</th>
+                  <th width="25%">Notes</th>
+                  <th width="10%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let trainingItem of training" (click)="handleVideoClick(trainingItem)" [ngClass] = "{'disabled': trainingItem.file == ''}">
+                  <td class="excercise">
+                    {{trainingItem.exercise}}
+                  </td>
+                  <td class="sets">
+                    {{trainingItem.sets}}
+                  </td>
+                  <td class="reps">
+                    {{trainingItem.reps}}
+                  </td>
+                  <td class="note" *ngIf="trainingItem.note != undefined" [attr.rowspan]="trainingItem.rowSpan ? trainingItem.rowSpan : 1">
+                    {{trainingItem.note}}
+                  </td>
+                  <td class="icons">
+                    <img src = "../assets/icon/play_icon.png" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <span>2020 ALL RIGHTS RESERVED</span>
+  </ion-toolbar>
+</ion-footer>

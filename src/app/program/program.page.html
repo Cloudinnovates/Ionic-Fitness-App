@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="../assets/imgs/logo-new.png" />
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button href="/home">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="restaurant"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="pie-chart"></ion-icon>
+      </ion-button>
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="home-banner">
+      <h1>YOUR PROGRAM</h1>
+      <h3>Daily Breakdown Plan</h3>
+    </div>
+
+    <ion-card class="nutrition-card" routerLink="/nutrition">
+      <img src="../assets/imgs/nutrition-img.jpg" />
+      <h3>Nutrition <ion-icon name="chevron-forward-outline"></ion-icon></h3>
+    </ion-card>
+  
+    <ion-card class="training-card" (click)="goTrain()">
+      <img src="../assets/imgs/training-img.jpg" />
+      <h3>Training <ion-icon name="chevron-forward-outline"></ion-icon></h3>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <span>2020 ALL RIGHTS RESERVED</span>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,68 @@
+ion-header{
+    ion-toolbar{
+      --background: #475a68;
+  
+      img {
+        height: 42px;
+        margin: 7px;
+      }
+  
+      ion-button{
+        --padding-start: 5px;
+        --padding-end: 5px;
+  
+        width: 35px;
+        height: 35px;
+  
+        ion-icon{
+          color: white;
+        }
+      }
+  
+      ion-menu-button{
+        color: white;
+      }
+    }
+  }
+  
+  ion-content{
+    --background: #fff url('../../assets/imgs/account-page-bg.jpg') no-repeat center center / cover;
+  
+    .main-content{
+      padding-top: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
+    
+      .home-banner{
+        h1{
+          text-align: center;
+          font-size: 18px;
+          margin: 10px 0;
+          color: white;
+          font-weight: bold;
+        }
+      }
+  
+      .landing-link{
+        p{
+            text-align: left;
+            font-size: 16px;
+            margin: 30px 30px;
+            color: white;
+            font-weight: bold;
+          }
+      }
+    }
+  }
+  
+  ion-footer{
+    ion-toolbar{
+      --background: #475a68;
+      --min-height: 30px;
+  
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+  }
+  

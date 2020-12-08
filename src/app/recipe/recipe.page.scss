@@ -1,0 +1,98 @@
+ion-header{
+    ion-toolbar{
+      --background: #475a68;
+  
+      img {
+        height: 42px;
+        margin: 7px;
+      }
+  
+      ion-button{
+        --padding-start: 5px;
+        --padding-end: 5px;
+  
+        width: 35px;
+        height: 35px;
+  
+        ion-icon{
+          color: white;
+        }
+      }
+  
+      ion-menu-button{
+        color: white;
+      }
+    }
+  }
+  
+  ion-content{
+    --background: #32414e;
+  
+    .main-content{
+      padding-top: 18px;
+      //padding-left: 15px;
+      //padding-right: 15px;
+    
+      .home-banner{
+        h1{
+          text-align: center;
+          font-size: 18px;
+          margin: 10px 0;
+          color: white;
+          font-weight: bold;
+        }
+      }
+  
+      .landing-link{
+        ion-button{
+          --background: transparent !important;
+          height: 80px;
+          --padding-start: 0px;
+          --padding-end: 0px;
+          --padding-bottom: 0px;
+          --padding-top: 0px;
+
+          //--border-style: none;
+          //--border: transparent !important;
+          //--border-color : #ffffff;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0px;
+          margin-top: 0px;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+
+          ion-item{
+            width: 100%;
+            --min-height: 80px;
+            --padding-bottom: 0px;
+            --padding-top: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+
+            ion-label{
+              margin-left: 5px;
+              color: white;
+              font-weight: bold;
+              font-size: 12px;
+            }
+  
+            ion-icon{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  ion-footer{
+    ion-toolbar{
+      --background: #475a68;
+      --min-height: 30px;
+  
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+  }

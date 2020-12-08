@@ -1,0 +1,28 @@
+ion-menu{
+  ion-toolbar{
+    --background: #475a68;
+
+    ion-title{
+      color: white;
+    }
+  }
+  ion-content{
+    --background: #475a68;
+
+    ion-list{
+      background-color: #475a68;
+
+      ion-item{
+        --background: #475a68;
+
+        ion-icon{
+          color: white;
+        }
+        
+        ion-label{
+          color: white;
+        }
+      }
+    }
+  }
+}

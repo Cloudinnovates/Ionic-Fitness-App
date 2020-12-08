@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="../assets/imgs/logo-new.png" />
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button href="/home">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="restaurant"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="pie-chart" ></ion-icon>
+      </ion-button>
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="main-content">
+    <div class="home-banner">
+      <h1>UPDATE YOUR<br>MEASUREMENTS</h1>
+    </div>
+    <div class="success-msg" *ngIf="update_success">
+      <h1>Profile Updated Successfully.</h1>
+    </div>
+    <div class="landing-link">
+        <ion-item expand="full" *ngFor="let item of datas">
+          <img src="../assets/icon/{{item.img}}" />
+          <ion-input value="{{item.value}}"></ion-input>
+          <ion-label>
+            {{item.unit}}
+          </ion-label>
+        </ion-item>
+    </div>
+    <div class="sel-title">
+      <h1>SELECT YOUR GENDER</h1>
+    </div>
+    <div class="sel-gender">
+      <img src="../assets/icon/female-uncheck.png" *ngIf="man" (click)="man = false"/>
+      <img src="../assets/icon/female-check.png" *ngIf="!man"/>
+      <img src="../assets/icon/male-check.png" *ngIf="man"/>
+      <img src="../assets/icon/male-uncheck.png" *ngIf="!man" (click)="man = true"/>
+    </div>
+    <ion-button expand="full" (click) = "funcUpdate()">
+      UPDATE DETAILS
+    </ion-button>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <span>2020 ALL RIGHTS RESERVED</span>
+  </ion-toolbar>
+</ion-footer>

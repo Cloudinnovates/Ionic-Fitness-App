@@ -1,0 +1,252 @@
+ion-header{
+    ion-toolbar{
+      --background: #475a68;
+  
+      img {
+        height: 42px;
+        margin: 7px;
+      }
+  
+      ion-button{
+        --padding-start: 5px;
+        --padding-end: 5px;
+  
+        width: 35px;
+        height: 35px;
+  
+        ion-icon{
+          color: white;
+        }
+      }
+  
+      ion-menu-button{
+        color: white;
+      }
+    }
+  }
+  
+  ion-content{
+    --background: #fff url('../../assets/imgs/common-bg.jpg') no-repeat center center / cover;
+  
+    .main-content{
+      padding-top: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
+    
+      .home-banner{
+        text-align: center;
+        margin-top: 30px;
+        h1{
+          font-size: 18px;
+          margin: 10px 0;
+          color: white;
+          font-weight: normal;
+        }
+      }
+  
+      .landing-link{
+        text-align: center;
+        margin-top: 30px;
+        .sel-train{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .fat-loss{
+                background: url('../../assets/imgs/body-fate-square.png') no-repeat 0 0 / 100% 100%;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .frame{
+                    background: url('../../assets/imgs/pink-outer-border.png') no-repeat center center / cover;
+                    width: 100px;
+                    height: 100px;
+                    
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        &.actived{
+                            opacity: 0.5;
+                            transition: all 0.3s ease-in;
+                        }
+                        &.inactived{
+                            opacity: 1;
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+
+                    .mask{
+                        position: absolute;
+                        margin-top: -105px;
+                        margin-left: 0px;
+                        width: 100px;
+                        height: 100px;
+                        background:rgba(226, 42, 108, .4);
+                        z-index: 1;
+                        &.actived{
+                            opacity: 1;
+                            transition: all 0.3s ease-in;
+                        }
+                        &.inactived{
+                            opacity: 0;
+                            transition: all 0.3s ease-out;
+                        }
+                        ion-icon{
+                            font-size: 72px;
+                            color: #ffffff;
+                            font-weight: bold;
+                            z-index: 2;
+                            &.actived{
+                                opacity: 1;
+                                transition: all 0.3s ease-in;
+                            }
+                            &.inactived{
+                                opacity: 0;
+                                transition: all 0.3s ease-out;
+                            }
+                        }
+                    }
+
+                    ion-label{
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .muscle-gain{
+                background: url('../../assets/imgs/muscle-gain-square.png') no-repeat 0 0 / 100% 100%;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .frame{
+                    background: url('../../assets/imgs/yellow-outer-border.png') no-repeat center center / cover;
+                    width: 100px;
+                    height: 100px;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        
+                        &.actived{
+                            opacity: 0.5;
+                            transition: all 0.3s ease-in;
+                        }
+                        &.inactived{
+                            opacity: 1;
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+
+                    .mask{
+                        position: absolute;
+                        margin-top: -105px;
+                        margin-left: 0px;
+                        width: 100px;
+                        height: 100px;
+                        background:#ff7400;
+                        z-index: 1;
+                        &.actived{
+                            opacity: 0.8;
+                            transition: all 0.3s ease-in;
+                        }
+                        &.inactived{
+                            opacity: 0;
+                            transition: all 0.3s ease-out;
+                        }
+                        ion-icon{
+                            font-size: 72px;
+                            color: #ffffff;
+                            font-weight: bold;
+                            z-index: 2;
+                            &.actived{
+                                opacity: 1;
+                                transition: all 0.3s ease-in;
+                            }
+                            &.inactived{
+                                opacity: 0;
+                                transition: all 0.3s ease-out;
+                            }
+                        }
+    
+                    }
+                    
+                    ion-label{
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+      }
+    }
+    .back-btn{
+        position: absolute;
+        bottom: 40px;
+        z-index: 10;
+        ion-button{
+            margin-left: 0px;
+            --background:transparent;
+            --padding-start:0px;
+            --padding-end:0px;
+            ion-item{
+                width: 100%;
+                margin-left: 0px;
+                --padding-start:15px;
+                --background: #1b242b;
+                ion-icon{
+                    font-size: 20px;
+                    margin-right: 10px;
+                    color: #ff7400;
+                }
+                ion-label{
+                    //--margin-start: 10px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .home-man{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        img{
+            width: 70%;
+            height: 90%;
+        }
+    }
+    .progress{
+        position: absolute;
+        bottom: 0px;
+        height: 10px;
+        width: 100%;
+        padding-left: 0px!important;
+        margin-left: 0px!important;
+        background-color: #ffffff;
+        .progress-bar{
+            margin-left: 0px;
+            height: 10px;
+            background-color: #ff7400;
+            width: 8.3%;
+        }
+    }
+  }
+  
+  ion-footer{
+    ion-toolbar{
+      --background: #475a68;
+      --min-height: 30px;
+  
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+  }
+  

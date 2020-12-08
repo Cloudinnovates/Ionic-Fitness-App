@@ -1,0 +1,58 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu side="start" content-id="main-content">
+      <ion-header>
+        <ion-toolbar translucent>
+          <ion-title>FitGuru</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="true">
+          <ion-item routerLink="/home">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item routerLink="/about">
+            <ion-icon name="help-circle" slot="start"></ion-icon>
+            <ion-label>About</ion-label>
+          </ion-item>
+          <!-- <ion-item routerLink="{{proRoute}}" *ngIf = "!isGuest">
+            <ion-icon name="pie-chart" slot="start"></ion-icon>
+            <ion-label>Program</ion-label>
+          </ion-item> -->
+          <!-- <ion-item routerLink="/recipe">
+            <ion-icon name="restaurant" slot="start"></ion-icon>
+            <ion-label>Recipe</ion-label>
+          </ion-item> -->
+          <ion-item routerLink="/my-account" *ngIf = "!isGuest">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>My Account</ion-label>
+          </ion-item>
+          <ion-item routerLink="/contact">
+            <ion-icon name="mail" slot="start"></ion-icon>
+            <ion-label>Contact</ion-label>
+          </ion-item>
+          <!-- <ion-item routerLink="/update_details">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>My Account</ion-label>
+          </ion-item> -->
+          <ion-item routerLink="/privacy-policy">
+            <ion-icon name="reader" slot="start"></ion-icon>
+            <ion-label>Privacy Policy</ion-label>
+          </ion-item>
+          <ion-item routerLink="/term-condition">
+            <ion-icon name="reader" slot="start"></ion-icon>
+            <ion-label>Term & Condition</ion-label>
+          </ion-item>
+          <ion-item routerLink="/auth">
+            <ion-icon name="log-out" slot="start"></ion-icon>
+            <ion-label>Log Out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

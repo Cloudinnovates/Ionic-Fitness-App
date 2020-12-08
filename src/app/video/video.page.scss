@@ -1,0 +1,62 @@
+ion-header{
+  ion-toolbar{
+    --background: #475a68;
+
+    img {
+      height: 42px;
+      margin: 7px;
+    }
+
+    ion-button{
+      --padding-start: 5px;
+      --padding-end: 5px;
+
+      width: 35px;
+      height: 35px;
+
+      ion-icon{
+        color: white;
+      }
+    }
+
+    ion-menu-button{
+      color: white;
+    }
+  }
+}
+
+ion-content{
+  --background: #080e17 url(../../assets/imgs/recipe-bg.jpg) center bottom no-repeat;
+
+  .main-content{
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    .home-banner{
+      text-align: center;
+      
+      h1{
+        font-size: 18px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    video{
+      width: 100%;
+    }
+  }
+}
+
+ion-footer{
+  ion-toolbar{
+    --background: #475a68;
+    --min-height: 30px;
+
+    text-align: center;
+    color: white;
+    font-size: 10px;
+  }
+}
